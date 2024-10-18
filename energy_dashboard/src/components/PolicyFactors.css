@@ -1,0 +1,71 @@
+.chart-container {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chart-container:hover {
+    background-color: transparent;
+    box-shadow: 0 6px 16px yellow;
+}
+
+.filter-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-container span {
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.checkbox-group::-webkit-scrollbar {
+    width: 8px;
+}
+
+.checkbox-group::-webkit-scrollbar-track {
+    background: #2C2C2C;
+    border-radius: 4px;
+}
+
+.checkbox-group::-webkit-scrollbar-thumb {
+    background-color: #555555;
+    border-radius: 4px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox-label input {
+    margin-right: 5px;
+    accent-color: yellow;
+    width: 16px;
+    height: 16px;
+}
+
+.checkbox-label:hover {
+    color: #B0B0B0;
+}
+
+@media screen and (max-width: 768px) {
+    .checkbox-group {
+        flex-direction: column;
+    }
+}
